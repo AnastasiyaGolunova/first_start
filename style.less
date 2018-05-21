@@ -172,6 +172,64 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin: @main__featured_items-margin;
+	.main__featured_items_title{
+	display: none;
+	position: absolute;
+	color: @color-text-thick;
+	font-size: 21.91px;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	transform: scaleX(1.0041);
+	margin-top: 129px;
+	margin-left: 63px;
+}
+	.main__featured_items_text{
+	display: none;
+	position: absolute;
+	color:  @color-text-thin;
+	font-size: 13.94px;
+	font-weight: 300;
+	line-height: 22px;
+	text-align: center;
+	transform: scaleX(1.0041);
+	margin-top: 169px;
+	margin-left: 32px;
+	width: 210px;
+}
+}
+.main__featured_items_img:hover{
+	background: @color-button;
+	opacity: 0.1;
+	border: 1px solid #9c9c9c;
+	display: block;
+	width: 268px;
+	height: 268px;
+}
+.main__featured_items .main__featured_items_link:hover .main__featured_items_title{
+	display: block;
+}
+.main__featured_items .main__featured_items_link:hover .main__featured_items_text{
+	display: block;
+}
+.main__featured_items_link{
+	position: relative;
+	display: inline-block;	
+}
+.main__featured_items_link:hover::before{
+	content: url('img/arrow-big.png');
+	display: block;
+	position: absolute;
+	background-color: @color-button;
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+	color:  @color-text-thin;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	margin-top: 62px;
+	margin-left: 111px;
+	line-height: 55px;
+	text-align: center;
 }
 .main__exclusive{
 	display: flex;
